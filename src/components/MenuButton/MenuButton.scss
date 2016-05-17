@@ -1,0 +1,50 @@
+.button-menu {
+  transition: all 0.3s linear;
+  padding: 2em;
+  background-color: transparent;
+  border: 0;
+  color: #ccc;
+  .button {
+    position: relative;
+    display: inline-block;
+    width: 2.2em;
+    height: 10px;
+    .bar {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      position: absolute;
+      background-color: #ffffff;
+      width: 50%;
+      height: 1px;
+    }
+    .bar1 {
+      top: 0;
+    }
+    .bar2 {
+      top: 4px;
+    }
+    .bar3 {
+      bottom: 0;
+    }
+  }
+  .label {
+    display: inline-block;
+    padding: 0 0.4em;
+  }
+  &.opened {
+    .button {
+      .bar1 {
+        top: 4px;
+        transform: rotate(45deg);
+      }
+      .bar2 {
+        width: 0;
+      }
+      .bar3 {
+        top: 4px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

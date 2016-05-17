@@ -9,12 +9,7 @@ html, body, div#root {
 // chararacter (\u3897) will not display properly.
 body {
   overflow: hidden;
-  font-family: initial;
-}
-
-// http://bodyig.tibetangeeks.com/info/web/tibetan_unicode_on_web_pages.html
-.CodeMirror {
-  font-family: "Microsoft Himalaya", "TCRC Youtso Unicode", "Tibetan Machine Uni", "Tib-US Unicode", Kokonor, Arial;
+  font-family: 'sans-serif';
 }
 
 // disable default outline

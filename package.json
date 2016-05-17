@@ -1,0 +1,23 @@
+{
+  "name": "dharma-treasure.github.io",
+  "version": "0.0.1",
+  "description": "Dharma Treasure Official Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karmapa/dharma-treasure.github.io.git"
+  },
+  "keywords": [
+    "Dharma",
+    "Treasure"
+  ],
+  "author": "kmsheng <kmsh3ng@gmail.com> (https://kmsheng.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karmapa/dharma-treasure.github.io/issues"
+  },
+  "homepage": "https://github.com/karmapa/dharma-treasure.github.io#readme"
+}

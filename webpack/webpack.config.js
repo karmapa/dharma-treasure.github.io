@@ -54,7 +54,7 @@ var config = {
         loader: 'url-loader?name=[path][name].[ext]&limit=10000&minetype=application/font-woff'
       },
       {
-        test: /\.(png|jpg|cur)$/,
+        test: /\.(png|gif|jpg|cur)$/,
         loader: 'url-loader?name=[path][name].[ext]&limit=8192'
       },
       {

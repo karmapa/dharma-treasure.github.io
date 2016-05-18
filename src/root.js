@@ -22,6 +22,7 @@ export default class Root extends React.Component {
       <Provider store={store}>
         <Router history={history}>
           <Route path="/" component={App} />
+          <Redirect from="*" to="/" />
         </Router>
       </Provider>
     );

@@ -1,0 +1,34 @@
+.jumbotron-wrapper {
+  position: relative;
+  height: 68%;
+  width: 84%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.jumbotron {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  .bg {
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    background-color: #000000;
+    background-image: url('./components/Jumbotron/bg-home-ex.jpg');
+    background-size: cover;
+    background-position: 0 -90px;
+  }
+  &.top, &.top .bg {
+    top: 0;
+    right: 0;
+  }
+  &.bottom, &.bottom .bg {
+    left: 0;
+    bottom: 0;
+  }
+}

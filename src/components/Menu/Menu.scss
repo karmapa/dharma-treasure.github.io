@@ -1,0 +1,54 @@
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu {
+  animation: menu 0.8s;
+  ul {
+    width: 320px;
+    margin: 0 auto;
+    li {
+      margin: 2em 0;
+    }
+    list-style-type: none;
+    a {
+      width: 100%;
+      white-space: nowrap;
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      color: #ffffff;
+      .number {
+        padding-top: 13px;
+        display: inline-block;
+        color: #ccc;
+        font-size: 0.8em;
+        margin-right: 10px;
+      }
+      .text {
+        width: 100%;
+      }
+      .text, .text-ex {
+        top: 0;
+        left: 0.8em;
+        position: absolute;
+        display: inline-block;
+        font-size: 1.8em;
+      }
+      .text-ex {
+        transition: all 0.3s;
+        overflow: hidden;
+        color: #0df5b8;
+        width: 0%;
+      }
+      &:hover .text-ex {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -9,6 +9,25 @@
   bottom: 0;
 }
 
+@keyframes sliding {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  60% {
+    opacity: 0.3;
+    width: 30%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.sliding {
+  animation: sliding 1.5s;
+}
+
 .jumbotron {
   position: absolute;
   height: 50%;

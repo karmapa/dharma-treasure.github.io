@@ -8,6 +8,7 @@ html, body, div#root {
 // DO NOT USE Helvetica Neue to display tibetain
 // chararacter (\u3897) will not display properly.
 body {
+  -webkit-font-smoothing: antialiased;
   overflow: hidden;
   font-family: 'sans-serif';
 }

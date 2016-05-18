@@ -35,6 +35,12 @@ export default class Menu extends Component {
             </a>
           </li>
         </ul>
+        <div className="line-random line1" />
+        <div className="line-random line2" />
+        <div className="line-random line3" />
+        <div className="line-random line4" />
+        <div className="line-random line5" />
+        <div className="line-random line6" />
       </div>
     );
   }

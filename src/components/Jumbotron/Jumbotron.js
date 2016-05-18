@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {debounce} from 'lodash';
 
 export default class Jumbotron extends Component {
 
@@ -10,7 +11,17 @@ export default class Jumbotron extends Component {
   componentDidMount() {
     this.wrapperWidth = this.refs.jumbotronWrapper.offsetWidth;
     this.forceUpdate();
+    window.addEventListener('resize', this.handleResize);
   }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
+
+  handleResize = debounce(() => {
+    this.wrapperWidth = this.refs.jumbotronWrapper.offsetWidth;
+    this.forceUpdate();
+  }, 300);
 
   render() {
     return (

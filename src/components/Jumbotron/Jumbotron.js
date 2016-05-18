@@ -21,6 +21,7 @@ export default class Jumbotron extends Component {
         <div className="jumbotron bottom sliding">
           <div className="bg" style={{width: this.wrapperWidth}} />
         </div>
+        <div className="overlay" />
       </div>
     );
   }

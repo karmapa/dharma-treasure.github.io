@@ -21,8 +21,8 @@ export default class Root extends React.Component {
     return (
       <Provider store={store}>
         <Router history={history}>
-          <Route path="/" component={App} />
-          <Redirect from="*" to="/" />
+          <Route path="/dharma-treasure.github.io" component={App} />
+          <Redirect from="*" to="/dharma-treasure.github.io" />
         </Router>
       </Provider>
     );

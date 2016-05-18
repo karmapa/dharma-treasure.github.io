@@ -32,6 +32,7 @@
     "babel-register": "6.8.0",
     "classnames": "2.2.5",
     "immutable": "3.8.1",
+    "lodash": "4.12.0",
     "normalize-scss": "4.2.1",
     "react": "15.0.2",
     "react-dom": "15.0.2",
